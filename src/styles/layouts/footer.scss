@@ -40,9 +40,13 @@
       gap: 16px;
       flex: 0 1 auto;
       text-align: left;
-      &:first-child {
-         flex-direction: row;
-         justify-content: space-between;
+      align-items: flex-start;
+
+      @media (max-width: 767px) {
+         &:first-child {
+            flex-direction: row;
+            justify-content: space-between;
+         }
       }
    }
 

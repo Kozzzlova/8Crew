@@ -30,8 +30,8 @@ export default defineConfig({
          input: {
             main: resolve(__dirname, 'index.html'),
             about: resolve(__dirname, 'aboutPage.html'),
-            about: resolve(__dirname, 'cancelPage.html'),
-            about: resolve(__dirname, 'paymentInfoPage.html'),
+            cancel: resolve(__dirname, 'cancelPage.html'),
+            paymentInfo: resolve(__dirname, 'paymentInfoPage.html'),
          },
       },
       server: {
