@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main page</title>
+  <script type='module' src='/main.js'></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header" class='header'></header>
+    <main class="main">
+      <div class="container">
+        main page
+      </div>
+    </main>
+    <footer id="footer" class='footer'></footer>
+  </div>
+
+
+
+
+
+  <script type="module">
+    async function loadHeader() {
+      const response = await fetch('./src/layout/header/header.html');
+      const html = await response.text();
+      document.getElementById('header').innerHTML = html;
+    }
+    loadHeader();
+  </script>
+  <script type="module">
+    async function loadFooter() {
+      const response = await fetch('./src/layout/footer/footer.html');
+      const html = await response.text();
+      document.getElementById('footer').innerHTML = html;
+    }
+    loadFooter();
+  </script>
+
+</body>
+
+</html>
