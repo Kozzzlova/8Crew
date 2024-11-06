@@ -90,6 +90,28 @@
       align-items: center;
       justify-content: center;
       position: relative;
+      @media (max-width: 767px) {
+         justify-content: space-between;
+      }
+   }
+   &__filter-btn {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 7px 15px;
+      border-radius: 4px;
+      gap: 10px;
+      border: 1px solid var(--black-2);
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      img {
+         width: 16px;
+         height: 16px;
+      }
+      @media (max-width: 767px) {
+         display: flex;
+      }
    }
 
    &__filter {
@@ -97,11 +119,18 @@
       align-items: center;
       justify-content: center;
       gap: 24px;
+      @media (max-width: 767px) {
+         display: none;
+      }
    }
 
    &__sort {
       position: absolute;
       right: 0;
+      @media (max-width: 767px) {
+         position: relative;
+         right: auto;
+      }
    }
 
    // .calalog__grid
