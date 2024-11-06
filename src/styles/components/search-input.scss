@@ -16,6 +16,9 @@
       height: 40px;
       outline: none;
       width: 100%;
+      @media (max-width: 767px) {
+         padding-left: 0;
+      }
    }
    &__icon {
       position: absolute;

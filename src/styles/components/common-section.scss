@@ -4,5 +4,6 @@
    min-height: 75vh;
    @media (max-width: 767px) {
       padding: 42px 0 80px 0;
+      min-height: auto;
    }
 }

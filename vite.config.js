@@ -32,6 +32,8 @@ export default defineConfig({
             about: resolve(__dirname, 'aboutPage.html'),
             cancel: resolve(__dirname, 'cancelPage.html'),
             paymentInfo: resolve(__dirname, 'paymentInfoPage.html'),
+            delivery: resolve(__dirname, 'deliveryPage.html'),
+            size: resolve(__dirname, 'sizePage.html'),
          },
       },
       server: {
