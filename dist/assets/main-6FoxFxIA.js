@@ -1,1 +1,0 @@
-import"./modulepreload-polyfill-B5Qt9EMX.js";import"./main-DW7Kc8Kj.js";async function o(){const e=await(await fetch("./src/layout/header/header.html")).text();document.getElementById("header").innerHTML=e}o();async function n(){const e=await(await fetch("./src/layout/footer/footer.html")).text();document.getElementById("footer").innerHTML=e}n();
