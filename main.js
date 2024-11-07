@@ -1,4 +1,4 @@
-import '/src/styles/style.scss';
+import './src/styles/style.scss';
 import './src/js/tabs.module';
 import './src/js/select.module';
 
