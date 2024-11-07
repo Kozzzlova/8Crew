@@ -3,6 +3,7 @@ import { resolve } from 'path';
 import { createHtmlPlugin } from 'vite-plugin-html';
 
 export default defineConfig({
+   base: '/8Crew/',
    // plugins: [
    //    createHtmlPlugin({
    //       minify: true,
@@ -26,7 +27,7 @@ export default defineConfig({
    //    },
    // },
    build: {
-      outDir: 'dist/', // Папка для собранных файлов
+      //outDir: 'dist/', // Папка для собранных файлов
       rollupOptions: {
          input: {
             main: resolve(__dirname, 'index.html'),
